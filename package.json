@@ -1,0 +1,23 @@
+{
+  "name": "fuse-box-plugin-svgr",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "scripts": {
+    "prepack": "tsc && node make-dist-package-json.js"
+  },
+  "keywords": [
+    "svgr",
+    "fuse-box"
+  ],
+  "homepage": "https://github.com/jakehedman/fuse-box-plugin-svgr",
+  "license": "MIT",
+  "devDependencies": {
+    "fuse-box": "^4.0.0-next.424",
+    "prettier": "^2.0.4",
+    "@types/node": "^13.11.1",
+    "typescript": "^3.8.3"
+  },
+  "dependencies": {
+    "@svgr/core": "^5.3.1"
+  }
+}
