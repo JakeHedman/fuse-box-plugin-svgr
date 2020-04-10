@@ -1,9 +1,11 @@
 {
   "name": "fuse-box-plugin-svgr",
   "version": "1.0.0",
-  "main": "dist/index.js",
+  "private": true,
+  "main": "index.js",
+  "types": "index.d.ts",
   "scripts": {
-    "prepack": "tsc && node make-dist-package-json.js"
+    "build": "tsc && node make-dist-package-json.js"
   },
   "keywords": [
     "svgr",

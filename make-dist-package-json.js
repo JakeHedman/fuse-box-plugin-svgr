@@ -4,6 +4,8 @@ const fs = require('fs')
 package.peerDependencies = {
   'fuse-box': package.devDependencies['fuse-box'],
 }
-
 delete package.devDependencies
-fs.writeFileSync('dist/package.json', package)
+delete package.private
+
+const json = JSON.stringify(package, null, 2)
+fs.writeFileSync('dist/package.json', json)
